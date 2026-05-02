@@ -3,11 +3,11 @@ I want a module to quickly spin up one or more ec2 instances with SSH access for
 
 ## Usage
 
-```
+```terraform
 module "debug_instances" {
   source = "git::https://github.com/danielhartnell/terraform-ec2-module?ref=main"
 
-  instance_type = "t3.micro"
+  instance_type  = "t3.micro"
   instance_count = 1
 }
 
