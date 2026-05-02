@@ -19,6 +19,6 @@ resource "aws_key_pair" "temp" {
 #
 
 resource "random_string" "random" {
-  length           = 4
-  special          = false
+  length  = 4
+  special = false
 }
