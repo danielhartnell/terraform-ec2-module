@@ -6,11 +6,6 @@ data "aws_ami" "ubuntu" {
     values = [var.ubuntu_ami_lookup_filter]
   }
 
-  filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
-  }
-
-  owners = ["099720109477"] # Canonical
+  owners = ["amazon"] # Canonical
 }
 
